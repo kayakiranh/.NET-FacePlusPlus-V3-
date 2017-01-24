@@ -1,0 +1,17 @@
+c:\users\smartis\documents\visual studio 2015\Projects\FacePP\FacePP.Service\bin\Debug\FacePP.Service.dll
+c:\users\smartis\documents\visual studio 2015\Projects\FacePP\FacePP.Service\bin\Debug\FacePP.Service.pdb
+c:\users\smartis\documents\visual studio 2015\Projects\FacePP\FacePP.Service\obj\Debug\FacePP.Service.csprojResolveAssemblyReference.cache
+c:\users\smartis\documents\visual studio 2015\Projects\FacePP\FacePP.Service\obj\Debug\FacePP.Service.dll
+c:\users\smartis\documents\visual studio 2015\Projects\FacePP\FacePP.Service\obj\Debug\FacePP.Service.pdb
+C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\bin\Debug\FacePP.Service.dll
+C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\bin\Debug\FacePP.Service.pdb
+C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\obj\Debug\FacePP.Service.csprojResolveAssemblyReference.cache
+C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\obj\Debug\FacePP.Service.dll
+C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\obj\Debug\FacePP.Service.pdb
+C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\FacePP.Service.dll
+C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\FacePP.Service.pdb
+C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\Newtonsoft.Json.dll
+C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\Newtonsoft.Json.xml
+C:\Users\smartis\Desktop\FacePP\FacePP.Service\obj\Debug\FacePP.Service.dll
+C:\Users\smartis\Desktop\FacePP\FacePP.Service\obj\Debug\FacePP.Service.pdb
+C:\Users\smartis\Desktop\FacePP\FacePP.Service\obj\Debug\FacePP.Service.csprojResolveAssemblyReference.cache
