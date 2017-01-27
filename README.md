@@ -49,7 +49,7 @@ So i coded :  detect > get detected image token > use token for search
 
 But i will mvc example with database in this year(2017).
 
-# Support :
+# Support / Advice / Mistake :
 kayakiranh@gmail.com, iletisim@huseyinkayakiran.com
 
 # Final :
