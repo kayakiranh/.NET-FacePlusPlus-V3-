@@ -33,6 +33,7 @@ Face++ company doesnt have c# support nowly.
         ////for web form/mvc
         
 5 - Set as start choosen project and start.
+6 - All layers use/need FacePP.Service layer. If doesnt necessary dont hand ApiService.cs
 
 # Missing : 
 I dont store any data about api(mssql, mysql, xml, json, sqllite...) so some services use api more than normal. 
