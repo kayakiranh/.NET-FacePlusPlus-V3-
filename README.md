@@ -7,10 +7,16 @@ C# Windows Console, C# Windows Form, .NET Web Form, .NET MVC5 examples for Face+
 # Why :
 Face++ company doesnt have c# support nowly.
 
+# IDE :
+Visaul Studio 2013 or Visual Studio 2015. Need Entity Framework 4.5 for web apps.(you can downgrade)
+
 # How To Use :
 1 - Download full files.
+
 2 - Be member to Face++ (https://www.faceplusplus.com/)
+
 3 - Create app from Face++ Console. Copy apikey and apisecret.
+
 4 - Change FacePP.Service > ApiService.cs > UserInfo Area
 
         //for console/windows form
@@ -33,6 +39,7 @@ Face++ company doesnt have c# support nowly.
         ////for web form/mvc
         
 5 - Set as start choosen project and start.
+
 6 - All layers use/need FacePP.Service layer. If doesnt necessary dont hand ApiService.cs
 
 # Missing : 
