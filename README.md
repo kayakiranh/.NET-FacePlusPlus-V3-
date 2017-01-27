@@ -54,5 +54,7 @@ kayakiranh@gmail.com, iletisim@huseyinkayakiran.com
 
 # Final :
 Sorry about bad english readme.
+
 Thanks for interest my project.
+
 Hüseyin Kayakıran
