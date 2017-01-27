@@ -53,7 +53,7 @@ But i will mvc example with database in this year(2017).
 kayakiranh@gmail.com, iletisim@huseyinkayakiran.com
 
 # Final :
-Sorry about bad english readme.
+Sorry about bad english.
 
 Thanks for interest my project.
 
