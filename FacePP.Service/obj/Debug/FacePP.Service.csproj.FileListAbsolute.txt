@@ -8,10 +8,3 @@ C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\bin\Debug\FacePP.Ser
 C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\obj\Debug\FacePP.Service.csprojResolveAssemblyReference.cache
 C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\obj\Debug\FacePP.Service.dll
 C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Service\obj\Debug\FacePP.Service.pdb
-C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\FacePP.Service.dll
-C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\FacePP.Service.pdb
-C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\Newtonsoft.Json.dll
-C:\Users\smartis\Desktop\FacePP\FacePP.Service\bin\Debug\Newtonsoft.Json.xml
-C:\Users\smartis\Desktop\FacePP\FacePP.Service\obj\Debug\FacePP.Service.dll
-C:\Users\smartis\Desktop\FacePP\FacePP.Service\obj\Debug\FacePP.Service.pdb
-C:\Users\smartis\Desktop\FacePP\FacePP.Service\obj\Debug\FacePP.Service.csprojResolveAssemblyReference.cache

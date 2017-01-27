@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "CreateFaceset";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>FaceSet Create API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/6329329" target="_blank">Go to Full Document Page</a></p>
+        <p>Important : if you can know/call tokens(from db, xml...), token versions is recommended. Token api names are inside full document page.</p>
+        <p>Create a face collection called FaceSet to store face_token. One FaceSet can hold up to 1000 face_token.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>FaceSet Create API Form</h2>
+        @using (Html.BeginForm("CreateFaceset", "Default", FormMethod.Post))
+        {
+            <label>Display Name : </label>
+            <input id="cfsDisplay" type="text" name="cfsDisplay" class="form-control" placeholder="Display Name" value="Test" />
+            <label>Outer ID : </label>
+            <input id="cfsOuter" type="text" name="cfsOuter" class="form-control" placeholder="Outer ID" value="Test" />
+            <label>Tags : </label>
+            <input id="cfsTag" type="text" name="cfsTag" class="form-control" placeholder="Tags" value="Tag,Tag,Tag" />
+            <label>Data : </label>
+            <input id="cfsData" type="text" name="cfsData" class="form-control" placeholder="Data" value="Data" />
+            <label>Merge : </label>
+            <input id="cfsForce" type="text" name="cfsForce" class="form-control" placeholder="1/0 (Default : 0)" value="0"/><br />
+            <input type="submit" value="Create Faceset" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

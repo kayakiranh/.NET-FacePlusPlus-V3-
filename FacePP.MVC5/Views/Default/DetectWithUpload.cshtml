@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "DetectWithUpload";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>Detect API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/5679127" target="_blank">Go to Full Document Page</a></p>
+        <p>Detect API detects and analyzes human faces within the image that you provided by image file or URL. Every detected face gets its <em>face_token</em>, which can be used in follow-up operations. Please note that only the 5 largest faces by its bounding box size will be analyzed, while you can use Face Analyze API to analyze the rest faces. If you want to use the detected face for follow-up operations, we recommend you to add its corresponding <em>face_token</em> into <em>FaceSet</em>. A <em>face_token&nbsp;</em>expires within 72 hours if it is not added into any FaceSet.&nbsp;Every time you operate face detection upon one image, the face within the image will get a different <em>face_token</em>.</p><br />
+        <p>Format : JPG (JPEG), PNG<br>Size : between 48*48 and 4096*4096 (pixels)<br>File size : no larger than 2MB<br>Minimal size of face : the bounding box of a detected face is a square. The minimal side length of a square should be no less than 1/48 of the short side of image, and no less than 48 pixels. For example if the size of image is 4096 * 3200px, the minimal size of face should be 66 * 66px.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>Detect API Form With Image Upload</h2>
+        @using (Html.BeginForm("DetectWithUpload", "Default", FormMethod.Post))
+        {
+            <label>Link : </label>
+            <input id="FileUpload1" type="file" name="FileUpload1" class="form-control" required />
+            <label>Landmark : </label>
+            <input id="LinkLandmark" type="text" name="LinkLandmark" class="form-control" placeholder="1/0" value="1" required />
+            <label>Attribute : </label>
+            <input id="LinkAttribute" type="text" name="LinkAttribute" class="form-control" placeholder="none,gender,age,smiling,headpose,facequality,blur,eyestatus" value="none,gender,age,smiling,headpose,facequality,blur,eyestatus" required />
+            <input type="submit" value="Detect With Link" class="btn btn-primary btn-block" />
+            <input type="button" value="Detect With Link / AJAX" class="btn btn-primary btn-block" id="LinkAjax" />
+        }
+        File : <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control" />
+        Landmark : <asp:TextBox ID="uploadLandmark" runat="server" CssClass="form-control" placeholder="1/0" Text="1"></asp:TextBox>
+        Attribute : <asp:TextBox ID="uploadAttribute" runat="server" CssClass="form-control" placeholder="gender,age,smiling,headpose,facequality,blur,eyestatus" Text="gender,age,smiling,headpose,facequality,blur,eyestatus"></asp:TextBox><br />
+        <asp:Button ID="uploadButton" runat="server" Text="Detect With Upload" CssClass="btn btn-primary btn-block" OnClick="uploadButton_Click" />
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

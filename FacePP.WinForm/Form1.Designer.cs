@@ -95,37 +95,43 @@
             this.label22 = new System.Windows.Forms.Label();
             this.addFaceToFaceSetAttribute = new System.Windows.Forms.TextBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.analyzeButton = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.analyzeLink = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.analyzeLandmark = new System.Windows.Forms.TextBox();
+            this.analyzeAttribute = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.detailFaceWithTokenButton = new System.Windows.Forms.Button();
+            this.detailFaceWithTokenLink = new System.Windows.Forms.TextBox();
+            this.detailFaceWithTokenAttribute = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.detailFaceWithTokenLandmark = new System.Windows.Forms.TextBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.setFaceUserIDNewUser = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.setFaceUserIDButton = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.setFaceUserIDLink = new System.Windows.Forms.TextBox();
+            this.setFaceUserIDLandmark = new System.Windows.Forms.TextBox();
+            this.setFaceUserIDAttribute = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.removeFaceToFaceSetButton = new System.Windows.Forms.Button();
             this.removeFaceToFaceSetOuter = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.removeFaceToFaceSetLink = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.analyzeButton = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.analyzeAttribute = new System.Windows.Forms.TextBox();
-            this.analyzeLandmark = new System.Windows.Forms.TextBox();
-            this.analyzeLink = new System.Windows.Forms.TextBox();
-            this.detailFaceWithTokenButton = new System.Windows.Forms.Button();
-            this.setFaceUserIDButton = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.detailFaceWithTokenLink = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.detailFaceWithTokenLandmark = new System.Windows.Forms.TextBox();
-            this.detailFaceWithTokenAttribute = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.setFaceUserIDLink = new System.Windows.Forms.TextBox();
-            this.setFaceUserIDAttribute = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.setFaceUserIDLandmark = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.setFaceUserIDNewUser = new System.Windows.Forms.TextBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.listFacesetButton = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
+            this.listFaceSetTag = new System.Windows.Forms.TextBox();
+            this.dfsdf = new System.Windows.Forms.Label();
+            this.listFaceSetStart = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -138,6 +144,7 @@
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -650,7 +657,7 @@
             this.groupBox7.Controls.Add(this.detailFaceSetButton);
             this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Controls.Add(this.detailFaceSetOuterName);
-            this.groupBox7.Location = new System.Drawing.Point(173, 451);
+            this.groupBox7.Location = new System.Drawing.Point(329, 493);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(150, 94);
             this.groupBox7.TabIndex = 3;
@@ -797,6 +804,68 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Analyze";
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(4, 106);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(60, 13);
+            this.label25.TabIndex = 12;
+            this.label25.Text = "Attributes : ";
+            // 
+            // analyzeButton
+            // 
+            this.analyzeButton.Location = new System.Drawing.Point(6, 151);
+            this.analyzeButton.Name = "analyzeButton";
+            this.analyzeButton.Size = new System.Drawing.Size(138, 23);
+            this.analyzeButton.TabIndex = 0;
+            this.analyzeButton.Text = "ANALYZE";
+            this.analyzeButton.UseVisualStyleBackColor = true;
+            this.analyzeButton.Click += new System.EventHandler(this.analyzeButton_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(4, 61);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(89, 13);
+            this.label26.TabIndex = 11;
+            this.label26.Text = "Landmark (1/0) : ";
+            // 
+            // analyzeLink
+            // 
+            this.analyzeLink.Location = new System.Drawing.Point(7, 35);
+            this.analyzeLink.Name = "analyzeLink";
+            this.analyzeLink.Size = new System.Drawing.Size(138, 20);
+            this.analyzeLink.TabIndex = 7;
+            this.analyzeLink.Text = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animatio" +
+    "ns/round/round_01_before.jpg";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(4, 16);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(36, 13);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Link : ";
+            // 
+            // analyzeLandmark
+            // 
+            this.analyzeLandmark.Location = new System.Drawing.Point(6, 80);
+            this.analyzeLandmark.Name = "analyzeLandmark";
+            this.analyzeLandmark.Size = new System.Drawing.Size(138, 20);
+            this.analyzeLandmark.TabIndex = 8;
+            this.analyzeLandmark.Text = "1";
+            // 
+            // analyzeAttribute
+            // 
+            this.analyzeAttribute.Location = new System.Drawing.Point(7, 125);
+            this.analyzeAttribute.Name = "analyzeAttribute";
+            this.analyzeAttribute.Size = new System.Drawing.Size(138, 20);
+            this.analyzeAttribute.TabIndex = 9;
+            this.analyzeAttribute.Text = "gender,age,smiling,headpose,facequality,blur,eyestatus";
+            // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.label29);
@@ -812,6 +881,68 @@
             this.groupBox12.TabIndex = 2;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Face Detail With Token";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(3, 108);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(60, 13);
+            this.label29.TabIndex = 18;
+            this.label29.Text = "Attributes : ";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(3, 63);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(89, 13);
+            this.label30.TabIndex = 17;
+            this.label30.Text = "Landmark (1/0) : ";
+            // 
+            // detailFaceWithTokenButton
+            // 
+            this.detailFaceWithTokenButton.Location = new System.Drawing.Point(7, 163);
+            this.detailFaceWithTokenButton.Name = "detailFaceWithTokenButton";
+            this.detailFaceWithTokenButton.Size = new System.Drawing.Size(138, 23);
+            this.detailFaceWithTokenButton.TabIndex = 13;
+            this.detailFaceWithTokenButton.Text = "DETAIL FACE";
+            this.detailFaceWithTokenButton.UseVisualStyleBackColor = true;
+            this.detailFaceWithTokenButton.Click += new System.EventHandler(this.detailFaceWithTokenButton_Click);
+            // 
+            // detailFaceWithTokenLink
+            // 
+            this.detailFaceWithTokenLink.Location = new System.Drawing.Point(6, 37);
+            this.detailFaceWithTokenLink.Name = "detailFaceWithTokenLink";
+            this.detailFaceWithTokenLink.Size = new System.Drawing.Size(138, 20);
+            this.detailFaceWithTokenLink.TabIndex = 13;
+            this.detailFaceWithTokenLink.Text = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animatio" +
+    "ns/round/round_01_before.jpg";
+            // 
+            // detailFaceWithTokenAttribute
+            // 
+            this.detailFaceWithTokenAttribute.Location = new System.Drawing.Point(6, 127);
+            this.detailFaceWithTokenAttribute.Name = "detailFaceWithTokenAttribute";
+            this.detailFaceWithTokenAttribute.Size = new System.Drawing.Size(138, 20);
+            this.detailFaceWithTokenAttribute.TabIndex = 15;
+            this.detailFaceWithTokenAttribute.Text = "gender,age,smiling,headpose,facequality,blur,eyestatus";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(3, 18);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(36, 13);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "Link : ";
+            // 
+            // detailFaceWithTokenLandmark
+            // 
+            this.detailFaceWithTokenLandmark.Location = new System.Drawing.Point(5, 82);
+            this.detailFaceWithTokenLandmark.Name = "detailFaceWithTokenLandmark";
+            this.detailFaceWithTokenLandmark.Size = new System.Drawing.Size(138, 20);
+            this.detailFaceWithTokenLandmark.TabIndex = 14;
+            this.detailFaceWithTokenLandmark.Text = "1";
             // 
             // groupBox13
             // 
@@ -830,6 +961,85 @@
             this.groupBox13.TabIndex = 3;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Set Face User_ID With Token";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(6, 156);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(74, 13);
+            this.label35.TabIndex = 26;
+            this.label35.Text = "New UserID : ";
+            // 
+            // setFaceUserIDNewUser
+            // 
+            this.setFaceUserIDNewUser.Location = new System.Drawing.Point(9, 175);
+            this.setFaceUserIDNewUser.Name = "setFaceUserIDNewUser";
+            this.setFaceUserIDNewUser.Size = new System.Drawing.Size(138, 20);
+            this.setFaceUserIDNewUser.TabIndex = 25;
+            this.setFaceUserIDNewUser.Text = "NewUserIDValue";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 118);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(60, 13);
+            this.label32.TabIndex = 24;
+            this.label32.Text = "Attributes : ";
+            // 
+            // setFaceUserIDButton
+            // 
+            this.setFaceUserIDButton.Location = new System.Drawing.Point(7, 214);
+            this.setFaceUserIDButton.Name = "setFaceUserIDButton";
+            this.setFaceUserIDButton.Size = new System.Drawing.Size(138, 23);
+            this.setFaceUserIDButton.TabIndex = 14;
+            this.setFaceUserIDButton.Text = "SET FACE USERID";
+            this.setFaceUserIDButton.UseVisualStyleBackColor = true;
+            this.setFaceUserIDButton.Click += new System.EventHandler(this.setFaceUserIDButton_Click);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(6, 73);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(89, 13);
+            this.label33.TabIndex = 23;
+            this.label33.Text = "Landmark (1/0) : ";
+            // 
+            // setFaceUserIDLink
+            // 
+            this.setFaceUserIDLink.Location = new System.Drawing.Point(9, 47);
+            this.setFaceUserIDLink.Name = "setFaceUserIDLink";
+            this.setFaceUserIDLink.Size = new System.Drawing.Size(138, 20);
+            this.setFaceUserIDLink.TabIndex = 19;
+            this.setFaceUserIDLink.Text = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animatio" +
+    "ns/round/round_01_before.jpg";
+            // 
+            // setFaceUserIDLandmark
+            // 
+            this.setFaceUserIDLandmark.Location = new System.Drawing.Point(8, 92);
+            this.setFaceUserIDLandmark.Name = "setFaceUserIDLandmark";
+            this.setFaceUserIDLandmark.Size = new System.Drawing.Size(138, 20);
+            this.setFaceUserIDLandmark.TabIndex = 20;
+            this.setFaceUserIDLandmark.Text = "1";
+            // 
+            // setFaceUserIDAttribute
+            // 
+            this.setFaceUserIDAttribute.Location = new System.Drawing.Point(9, 137);
+            this.setFaceUserIDAttribute.Name = "setFaceUserIDAttribute";
+            this.setFaceUserIDAttribute.Size = new System.Drawing.Size(138, 20);
+            this.setFaceUserIDAttribute.TabIndex = 21;
+            this.setFaceUserIDAttribute.Text = "gender,age,smiling,headpose,facequality,blur,eyestatus";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(6, 28);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(36, 13);
+            this.label34.TabIndex = 22;
+            this.label34.Text = "Link : ";
             // 
             // groupBox9
             // 
@@ -890,208 +1100,63 @@
             this.label27.TabIndex = 10;
             this.label27.Text = "Link : ";
             // 
-            // analyzeButton
+            // groupBox10
             // 
-            this.analyzeButton.Location = new System.Drawing.Point(6, 151);
-            this.analyzeButton.Name = "analyzeButton";
-            this.analyzeButton.Size = new System.Drawing.Size(138, 23);
-            this.analyzeButton.TabIndex = 0;
-            this.analyzeButton.Text = "ANALYZE";
-            this.analyzeButton.UseVisualStyleBackColor = true;
-            this.analyzeButton.Click += new System.EventHandler(this.analyzeButton_Click);
+            this.groupBox10.Controls.Add(this.dfsdf);
+            this.groupBox10.Controls.Add(this.listFaceSetStart);
+            this.groupBox10.Controls.Add(this.listFacesetButton);
+            this.groupBox10.Controls.Add(this.label36);
+            this.groupBox10.Controls.Add(this.listFaceSetTag);
+            this.groupBox10.Location = new System.Drawing.Point(173, 451);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(150, 136);
+            this.groupBox10.TabIndex = 32;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "List FaceSets";
             // 
-            // label25
+            // listFacesetButton
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(4, 106);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(60, 13);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "Attributes : ";
+            this.listFacesetButton.Location = new System.Drawing.Point(5, 107);
+            this.listFacesetButton.Name = "listFacesetButton";
+            this.listFacesetButton.Size = new System.Drawing.Size(137, 23);
+            this.listFacesetButton.TabIndex = 29;
+            this.listFacesetButton.Text = "LIST FACESETS";
+            this.listFacesetButton.UseVisualStyleBackColor = true;
+            this.listFacesetButton.Click += new System.EventHandler(this.listFacesetButton_Click);
             // 
-            // label26
+            // label36
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(4, 61);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(89, 13);
-            this.label26.TabIndex = 11;
-            this.label26.Text = "Landmark (1/0) : ";
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(5, 17);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(35, 13);
+            this.label36.TabIndex = 31;
+            this.label36.Text = "Tag : ";
             // 
-            // label28
+            // listFaceSetTag
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(4, 16);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(36, 13);
-            this.label28.TabIndex = 10;
-            this.label28.Text = "Link : ";
+            this.listFaceSetTag.Location = new System.Drawing.Point(7, 36);
+            this.listFaceSetTag.Name = "listFaceSetTag";
+            this.listFaceSetTag.Size = new System.Drawing.Size(138, 20);
+            this.listFaceSetTag.TabIndex = 30;
+            this.listFaceSetTag.Text = "Test2";
             // 
-            // analyzeAttribute
+            // dfsdf
             // 
-            this.analyzeAttribute.Location = new System.Drawing.Point(7, 125);
-            this.analyzeAttribute.Name = "analyzeAttribute";
-            this.analyzeAttribute.Size = new System.Drawing.Size(138, 20);
-            this.analyzeAttribute.TabIndex = 9;
-            this.analyzeAttribute.Text = "gender,age,smiling,headpose,facequality,blur,eyestatus";
+            this.dfsdf.AutoSize = true;
+            this.dfsdf.Location = new System.Drawing.Point(5, 62);
+            this.dfsdf.Name = "dfsdf";
+            this.dfsdf.Size = new System.Drawing.Size(38, 13);
+            this.dfsdf.TabIndex = 33;
+            this.dfsdf.Text = "Start : ";
             // 
-            // analyzeLandmark
+            // listFaceSetStart
             // 
-            this.analyzeLandmark.Location = new System.Drawing.Point(6, 80);
-            this.analyzeLandmark.Name = "analyzeLandmark";
-            this.analyzeLandmark.Size = new System.Drawing.Size(138, 20);
-            this.analyzeLandmark.TabIndex = 8;
-            this.analyzeLandmark.Text = "1";
-            // 
-            // analyzeLink
-            // 
-            this.analyzeLink.Location = new System.Drawing.Point(7, 35);
-            this.analyzeLink.Name = "analyzeLink";
-            this.analyzeLink.Size = new System.Drawing.Size(138, 20);
-            this.analyzeLink.TabIndex = 7;
-            this.analyzeLink.Text = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animatio" +
-    "ns/round/round_01_before.jpg";
-            // 
-            // detailFaceWithTokenButton
-            // 
-            this.detailFaceWithTokenButton.Location = new System.Drawing.Point(7, 163);
-            this.detailFaceWithTokenButton.Name = "detailFaceWithTokenButton";
-            this.detailFaceWithTokenButton.Size = new System.Drawing.Size(138, 23);
-            this.detailFaceWithTokenButton.TabIndex = 13;
-            this.detailFaceWithTokenButton.Text = "DETAIL FACE";
-            this.detailFaceWithTokenButton.UseVisualStyleBackColor = true;
-            this.detailFaceWithTokenButton.Click += new System.EventHandler(this.detailFaceWithTokenButton_Click);
-            // 
-            // setFaceUserIDButton
-            // 
-            this.setFaceUserIDButton.Location = new System.Drawing.Point(7, 214);
-            this.setFaceUserIDButton.Name = "setFaceUserIDButton";
-            this.setFaceUserIDButton.Size = new System.Drawing.Size(138, 23);
-            this.setFaceUserIDButton.TabIndex = 14;
-            this.setFaceUserIDButton.Text = "SET FACE USERID";
-            this.setFaceUserIDButton.UseVisualStyleBackColor = true;
-            this.setFaceUserIDButton.Click += new System.EventHandler(this.setFaceUserIDButton_Click);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(3, 108);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(60, 13);
-            this.label29.TabIndex = 18;
-            this.label29.Text = "Attributes : ";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(3, 63);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(89, 13);
-            this.label30.TabIndex = 17;
-            this.label30.Text = "Landmark (1/0) : ";
-            // 
-            // detailFaceWithTokenLink
-            // 
-            this.detailFaceWithTokenLink.Location = new System.Drawing.Point(6, 37);
-            this.detailFaceWithTokenLink.Name = "detailFaceWithTokenLink";
-            this.detailFaceWithTokenLink.Size = new System.Drawing.Size(138, 20);
-            this.detailFaceWithTokenLink.TabIndex = 13;
-            this.detailFaceWithTokenLink.Text = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animatio" +
-    "ns/round/round_01_before.jpg";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(3, 18);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(36, 13);
-            this.label31.TabIndex = 16;
-            this.label31.Text = "Link : ";
-            // 
-            // detailFaceWithTokenLandmark
-            // 
-            this.detailFaceWithTokenLandmark.Location = new System.Drawing.Point(5, 82);
-            this.detailFaceWithTokenLandmark.Name = "detailFaceWithTokenLandmark";
-            this.detailFaceWithTokenLandmark.Size = new System.Drawing.Size(138, 20);
-            this.detailFaceWithTokenLandmark.TabIndex = 14;
-            this.detailFaceWithTokenLandmark.Text = "1";
-            // 
-            // detailFaceWithTokenAttribute
-            // 
-            this.detailFaceWithTokenAttribute.Location = new System.Drawing.Point(6, 127);
-            this.detailFaceWithTokenAttribute.Name = "detailFaceWithTokenAttribute";
-            this.detailFaceWithTokenAttribute.Size = new System.Drawing.Size(138, 20);
-            this.detailFaceWithTokenAttribute.TabIndex = 15;
-            this.detailFaceWithTokenAttribute.Text = "gender,age,smiling,headpose,facequality,blur,eyestatus";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(6, 118);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(60, 13);
-            this.label32.TabIndex = 24;
-            this.label32.Text = "Attributes : ";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 73);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(89, 13);
-            this.label33.TabIndex = 23;
-            this.label33.Text = "Landmark (1/0) : ";
-            // 
-            // setFaceUserIDLink
-            // 
-            this.setFaceUserIDLink.Location = new System.Drawing.Point(9, 47);
-            this.setFaceUserIDLink.Name = "setFaceUserIDLink";
-            this.setFaceUserIDLink.Size = new System.Drawing.Size(138, 20);
-            this.setFaceUserIDLink.TabIndex = 19;
-            this.setFaceUserIDLink.Text = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animatio" +
-    "ns/round/round_01_before.jpg";
-            // 
-            // setFaceUserIDAttribute
-            // 
-            this.setFaceUserIDAttribute.Location = new System.Drawing.Point(9, 137);
-            this.setFaceUserIDAttribute.Name = "setFaceUserIDAttribute";
-            this.setFaceUserIDAttribute.Size = new System.Drawing.Size(138, 20);
-            this.setFaceUserIDAttribute.TabIndex = 21;
-            this.setFaceUserIDAttribute.Text = "gender,age,smiling,headpose,facequality,blur,eyestatus";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(6, 28);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(36, 13);
-            this.label34.TabIndex = 22;
-            this.label34.Text = "Link : ";
-            // 
-            // setFaceUserIDLandmark
-            // 
-            this.setFaceUserIDLandmark.Location = new System.Drawing.Point(8, 92);
-            this.setFaceUserIDLandmark.Name = "setFaceUserIDLandmark";
-            this.setFaceUserIDLandmark.Size = new System.Drawing.Size(138, 20);
-            this.setFaceUserIDLandmark.TabIndex = 20;
-            this.setFaceUserIDLandmark.Text = "1";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(6, 156);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(74, 13);
-            this.label35.TabIndex = 26;
-            this.label35.Text = "New UserID : ";
-            // 
-            // setFaceUserIDNewUser
-            // 
-            this.setFaceUserIDNewUser.Location = new System.Drawing.Point(9, 175);
-            this.setFaceUserIDNewUser.Name = "setFaceUserIDNewUser";
-            this.setFaceUserIDNewUser.Size = new System.Drawing.Size(138, 20);
-            this.setFaceUserIDNewUser.TabIndex = 25;
-            this.setFaceUserIDNewUser.Text = "NewUserIDValue";
+            this.listFaceSetStart.Location = new System.Drawing.Point(7, 81);
+            this.listFaceSetStart.Name = "listFaceSetStart";
+            this.listFaceSetStart.Size = new System.Drawing.Size(138, 20);
+            this.listFaceSetStart.TabIndex = 32;
+            this.listFaceSetStart.Text = "Test2";
             // 
             // Form1
             // 
@@ -1099,6 +1164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(817, 669);
+            this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.groupBox7);
@@ -1137,6 +1203,8 @@
             this.groupBox13.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1241,6 +1309,12 @@
         private System.Windows.Forms.TextBox setFaceUserIDLandmark;
         private System.Windows.Forms.TextBox setFaceUserIDAttribute;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label dfsdf;
+        private System.Windows.Forms.TextBox listFaceSetStart;
+        private System.Windows.Forms.Button listFacesetButton;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox listFaceSetTag;
     }
 }
 

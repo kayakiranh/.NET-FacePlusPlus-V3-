@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Compare";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>Compare API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/5679308" target="_blank">Go to Full Document Page</a></p>
+        <p>Important : if you can know/call tokens(from db, xml...), token versions is recommended. Token api names are inside full document page.</p>
+        <p>Compare two faces and decide whether they are from the same person. You can upload image file or use face_token for face comparing. For image upload, the biggest face by the size of bounding box within the image will be used. For face_token, you shall get it by using Detect API.</p><br />
+        <p>Format : JPG (JPEG), PNG<br>Size : between 48*48 and 4096*4096 (pixels)<br>File size : no larger than 2MB<br>Minimal size of face : the bounding box of a detected face is a square. The minimal side length of a square should be no less than 150 pixels.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>Compare API With Image Link</h2>
+        @using (Html.BeginForm("Compare", "Default", FormMethod.Post))
+        {
+            <label>Link : </label>
+            <input id="linkUrl" type="text" name="linkUrl" class="form-control" placeholder="Image Link" value="http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg" required />
+            <label>Landmark : </label>
+            <input id="linkUrl2" type="text" name="linkUrl2" class="form-control" placeholder="Image Link" value="http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg" required /><br />
+            <input type="submit" value="Compare With Link" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

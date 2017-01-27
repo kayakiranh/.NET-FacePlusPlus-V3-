@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "FaceDetailWithToken";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>Face GetDetail API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/6329496" target="_blank">Go to Full Document Page</a></p>
+        <p>Important : if you can know/call tokens(from db, xml...), token versions is recommended. Token api names are inside full document page.</p>
+        <p>Get related information to a face by passing its face_token which you can get from Detect API. Face related information includes image_id and FaceSet which it belongs to.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>Face GetDetail API Form With Image Link</h2>
+        @using (Html.BeginForm("FaceDetailWithToken", "Default", FormMethod.Post))
+        {
+            <label>Link : </label>
+            <input id="fdwtUrl" type="text" name="fdwtUrl" class="form-control" placeholder="Image Link" value="http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg" required />
+            <label>Landmark : </label>
+            <input id="fdwtLandmark" type="text" name="fdwtLandmark" class="form-control" placeholder="1/0 (Default : 0)" value="1" />
+            <label>Attribute : </label>
+            <input id="fdwtAttribute" type="text" name="fdwtAttribute" class="form-control" placeholder="gender,age,smiling,headpose,facequality,blur,eyestatus (Default : none)" value="none,gender,age,smiling,headpose,facequality,blur,eyestatus" required />
+            <input type="submit" value="GetDetail Face With Token" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "AddFaceToFaceset";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>FaceSet AddFace API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/6329371" target="_blank">Go to Full Document Page</a></p>
+        <p>Important : if you can know/call tokens(from db, xml...), token versions is recommended. Token api names are inside full document page.</p>
+        <p>Add face_token into an existing FaceSet. One FaceSet can hold up to 1000 face_token.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>FaceSet AddFace API Form</h2>
+        @using (Html.BeginForm("AddFaceToFaceset", "Default", FormMethod.Post))
+        {
+            <label>Link : </label>
+            <input id="aftfsUrl" type="text" name="aftfsUrl" class="form-control" placeholder="Image Link" value="http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg" required />
+            <label>Landmark : </label>
+            <input id="aftfsLandmark" type="text" name="aftfsLandmark" class="form-control" placeholder="1/0" value="1" />
+            <label>Attribute : </label>
+            <input id="aftfsAttribute" type="text" name="aftfsAttribute" class="form-control" placeholder="gender,age,smiling,headpose,facequality,blur,eyestatus" value="gender,age,smiling,headpose,facequality,blur,eyestatus" />
+            <label>Outer : </label>
+            <input id="aftfsOuter" type="text" name="aftfsOuter" class="form-control" placeholder="Test" value="Test" required /><br />
+            <input type="submit" value="Add Face To Faceset" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+                }
+        }
+    </div>
+</div>

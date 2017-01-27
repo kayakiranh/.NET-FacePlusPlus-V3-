@@ -25,7 +25,6 @@ namespace FacePP.Console
         ///
         /// !!! PLEASE READ ONCE START DEVELOPMENT !!!
 
-        ///NEWTONSOFT.JSON NUGGET ADDED
         /// "/Assemblies/Microsoft.Csharp" ADDED TO REFERENCE
         /// "/Projects/FacePP.Service" ADDED TO REFERENCE
 
@@ -140,69 +139,63 @@ namespace FacePP.Console
         //Detect
         private static string CallDetectFaceService()
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string image = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg"; //image is link, dont prefer for low internet.
             int landmark = 1; //get all landmark values
             string attributes = "gender,age,smiling,headpose,facequality,blur,eyestatus"; // get all attributes
-            //get json value
+
             return AS.DetectFace(image, landmark, attributes);
         }
 
         //Compare
         private static string CallCompareFaceService()
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string image = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg"; //image is link, dont prefer for low internet
             string image2 = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg"; //image is link, dont prefer for low internet
-            //get json value
+
             return AS.CompareFace(image, image2);
         }
 
         //Search
         private static string CallSearchFaceService()
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string image = "http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg"; //image is link, dont prefer for low internet.
             string outer = "LL"; //Faceset outer name
             int count = 1; //default 1, min = 1 and max = 5
-            //get json value
+
             return AS.SearchFace(image, outer, count);
         }
 
         //Create FaceSet
         private static string CallCreateFaceSetService()
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string name = "LL Face Set";
             string outer = "LL"; //remember outer for call faceset again or call facesetlist service for remember outer
             string tag = "neymar";
             string token = "";
             string data = "LL Players";
             int force = 0; //default
-            //get json value
+
             return AS.CreateFaceSet(name, outer, tag, token, data, force);
         }
 
         //Update FaceSet
         private static string CallUpdateFaceSetService()
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string name = "EPL Face Set";
             string outer = "LL"; //remember outer for call faceset again or call facesetlist service for remember outer
             string new_outer = "EPL";
             string tag = "rooney";
             string data = "England Premier League Players";
-            //get json value
 
             return AS.UpdateFaceSet(outer, new_outer, name, data, tag);
         }
@@ -210,12 +203,10 @@ namespace FacePP.Console
         //Remove FaceSet
         private static string CallRemoveFaceSetService()
         {
-            //service instance
             AS = new ApiService();
             //create variables
             string outer = "EPL";
             int empty = 0; //if dont want remove not empty faceset turn it 1
-            //get json value
 
             return AS.RemoveFaceSet(outer, empty);
         }
@@ -223,7 +214,6 @@ namespace FacePP.Console
         //Add face to faceset
         private static string CallAddFaceToFaceSetService()
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 
@@ -234,30 +224,25 @@ namespace FacePP.Console
             string outer = "LL";
             //get detected image json value
             string detectedImage = AS.DetectFace(image, landmark, attributes);
-
             //find faceset for add detected image
             string facesetForAddDetectedImage = AS.GetDetailFaceSet(outer);
             //create variables
             string faceset_token = H.ReadJsonDetailFaceSetForDetectedImageToken(facesetForAddDetectedImage);
             string face_token = H.ReadJsonForDetectedImageToken(detectedImage);
 
-            //get json value
             return AS.AddFaceToFaceSet(faceset_token, outer, face_token);
         }
 
         //Get faceset list
         private static string CallFaceSetListService(string tag, int start)
         {
-            //service instance
             AS = new ApiService();
-            //get json value
             return AS.GetFaceSetList(tag, start);
         }
 
         //Remove face to faceset
         private static string CallRemoveFaceFromFaceSetService()
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 
@@ -267,31 +252,25 @@ namespace FacePP.Console
             int count = 1;
             //get detected image json value
             string searchResult = AS.SearchFace(image, outer, count);
-
             //find faceset for add detected image
             string facesetForAddDetectedImage = AS.GetDetailFaceSet(outer);
             //create variables
             string faceset_token = H.ReadJsonDetailFaceSetForDetectedImageToken(facesetForAddDetectedImage);
-
             string face_token = H.ReadJsonForSearchToken(searchResult);
 
-            //get json value
             return AS.RemoveFaceFromFaceSet(faceset_token, outer, face_token);
         }
 
         //Get faceset response json's outer_id
         private static string CallDetailFaceSetService(string outer)
         {
-            //service instance
             AS = new ApiService();
-            //get json value
             return AS.GetDetailFaceSet(outer);
         }
 
         //Analyze
         private static string CallAnalyzeFaceService()
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 
@@ -303,14 +282,13 @@ namespace FacePP.Console
             //get detected image json value
             string detectedImage = AS.DetectFace(image, landmark, attributes);
             string face_token = H.ReadJsonForDetectedImageToken(detectedImage);
-            //get json value
+
             return AS.AnalyzeFace(face_token, landmark, attributes);
         }
 
         //Face detail with token
         private static string CallFaceDetailWithTokenService()
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 
@@ -328,7 +306,6 @@ namespace FacePP.Console
         //Face detail with token
         private static string CallSetFaceDetailWithTokenService()
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 

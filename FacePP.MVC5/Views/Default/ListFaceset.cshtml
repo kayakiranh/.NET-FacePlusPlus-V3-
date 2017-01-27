@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "ListFaceset";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>FaceSet GetFaceSets API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/6329430" target="_blank">Go to Full Document Page</a></p>
+        <p>Get all the FaceSet.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>FaceSet GetFaceSets API Form</h2>
+        @using (Html.BeginForm("ListFaceset", "Default", FormMethod.Post))
+        {
+            <label>Tags : </label>
+            <input id="lfsTag" type="text" name="lfsTag" class="form-control" placeholder="Tag" value="Test" />
+            <label>Start : </label>
+            <input id="lfsStart" type="text" name="lfsStart" class="form-control" placeholder="1-1000, (Default : 1)" value="1" />
+            <input type="submit" value="List Facesets" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

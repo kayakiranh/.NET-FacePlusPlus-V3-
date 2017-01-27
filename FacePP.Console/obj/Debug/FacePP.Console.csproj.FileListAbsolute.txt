@@ -14,13 +14,3 @@ C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Console\bin\Debug\FacePP.Ser
 C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Console\obj\Debug\FacePP.Console.csprojResolveAssemblyReference.cache
 C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Console\obj\Debug\FacePP.Console.exe
 C:\Users\Huseyin\Desktop\Yeni klasör\FacePP\FacePP.Console\obj\Debug\FacePP.Console.pdb
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\obj\Debug\FacePP.Console.csprojResolveAssemblyReference.cache
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\bin\Debug\FacePP.Console.exe.config
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\bin\Debug\FacePP.Console.exe
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\bin\Debug\FacePP.Console.pdb
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\bin\Debug\FacePP.Service.dll
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\bin\Debug\Newtonsoft.Json.dll
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\bin\Debug\FacePP.Service.pdb
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\bin\Debug\Newtonsoft.Json.xml
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\obj\Debug\FacePP.Console.exe
-C:\Users\smartis\Desktop\FacePP\FacePP.Console\obj\Debug\FacePP.Console.pdb

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "SetUserIDWithToken";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>Face SetUserID API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/6329500" target="_blank">Go to Full Document Page</a></p>
+        <p>Important : if you can know/call tokens(from db, xml...), token versions is recommended. Token api names are inside full document page.</p>
+        <p>Set user_id for a detected face. user_id can be returned in Search results to determine the identity of user.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>Face SetUserID API Form</h2>
+        @using (Html.BeginForm("SetUserIDWithToken", "Default", FormMethod.Post))
+        {
+            <label>Link : </label>
+            <input id="afUrl" type="text" name="afUrl" class="form-control" placeholder="Image Link" value="http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg" required />
+            <label>Landmark : </label>
+            <input id="afLandmark" type="text" name="afLandmark" class="form-control" placeholder="1/0 (Default : 0)" value="1" />
+            <label>Attribute : </label>
+            <input id="afAttribute" type="text" name="afAttribute" class="form-control" placeholder="gender,age,smiling,headpose,facequality,blur,eyestatus (Default : none)" value="gender,age,smiling,headpose,facequality,blur,eyestatus" />
+            <label>New User ID : </label>
+            <input id="suivtUser" type="text" name="suivtUser" class="form-control" placeholder="New User ID" value="Test" required /><br />
+            <input type="submit" value="Set UserID" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

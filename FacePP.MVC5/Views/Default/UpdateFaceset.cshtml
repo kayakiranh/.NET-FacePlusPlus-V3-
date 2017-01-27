@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "UpdateFaceset";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>FaceSet Update API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/6329383" target="_blank">Go to Full Document Page</a></p>
+        <p>Important : if you can know/call tokens(from db, xml...), token versions is recommended. Token api names are inside full document page.</p>
+        <p>Update the attributes of a FaceSet.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>FaceSet Update API Form</h2>
+        @using (Html.BeginForm("UpdateFaceset", "Default", FormMethod.Post))
+        {
+            <label>Outer ID : </label>
+            <input id="ufsOuter" type="text" name="ufsOuter" class="form-control" placeholder="Outer ID" value="Test" required />
+            <label>New Outer ID : </label>
+            <input id="ufsNewOuter" type="text" name="ufsNewOuter" class="form-control" placeholder="Outer ID" value="Test" required />
+            <label>Display Name : </label>
+            <input id="ufsDisplay" type="text" name="ufsDisplay" class="form-control" placeholder="Display Name" value="Test" />
+            <label>Tags : </label>
+            <input id="ufsTag" type="text" name="ufsTag" class="form-control" placeholder="Tags" value="Tag,Tag,Tag" />
+            <label>Data : </label>
+            <input id="ufsData" type="text" name="ufsData" class="form-control" placeholder="Data" value="Data" /><br />
+            <input type="submit" value="Update Faceset" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

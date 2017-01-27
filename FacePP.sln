@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacePP.WinForm", "FacePP.Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacePP.WebForm", "FacePP.WebForm\FacePP.WebForm.csproj", "{A72C8D3E-A230-4001-97F5-7450B6A1BACE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacePP.MVC", "FacePP.MVC\FacePP.MVC.csproj", "{C8FA098E-CD37-4EFF-AE27-6E6F7D4123F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacePP.MVC5", "FacePP.MVC5\FacePP.MVC5.csproj", "{BC46635D-E5DF-4BA2-A045-3E30850A1E61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{A72C8D3E-A230-4001-97F5-7450B6A1BACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A72C8D3E-A230-4001-97F5-7450B6A1BACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A72C8D3E-A230-4001-97F5-7450B6A1BACE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8FA098E-CD37-4EFF-AE27-6E6F7D4123F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8FA098E-CD37-4EFF-AE27-6E6F7D4123F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8FA098E-CD37-4EFF-AE27-6E6F7D4123F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8FA098E-CD37-4EFF-AE27-6E6F7D4123F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC46635D-E5DF-4BA2-A045-3E30850A1E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC46635D-E5DF-4BA2-A045-3E30850A1E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC46635D-E5DF-4BA2-A045-3E30850A1E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC46635D-E5DF-4BA2-A045-3E30850A1E61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

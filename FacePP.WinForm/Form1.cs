@@ -26,7 +26,6 @@ namespace FacePP.WinForm
         ///
         /// !!! PLEASE READ ONCE START DEVELOPMENT !!!
 
-        ///NEWTONSOFT.JSON NUGGET ADDED
         /// "/Assemblies/Microsoft.Csharp" ADDED TO REFERENCE
         /// "/Projects/FacePP.Service" ADDED TO REFERENCE
 
@@ -59,115 +58,102 @@ namespace FacePP.WinForm
 
         private void detectButton_Click(object sender, System.EventArgs e)
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string image = detectUrl.Text;
             int landmark = Convert.ToInt32(detectLandmark.Text);
             string attributes = detectAttribute.Text;
-            //get json value
+
             MessageBox.Show(AS.DetectFace(image, landmark, attributes));
         }
 
         private void compareButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string image = compareUrl1.Text;
             string image2 = compareUrl2.Text;
-            //get json value
+
             MessageBox.Show(AS.CompareFace(image, image2));
         }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string image = searchUrl.Text;
             string outer = searchOuter.Text;
             int count = Convert.ToInt32(searchCount.Text);
-            //get json value
+
             MessageBox.Show(AS.SearchFace(image, outer, count));
         }
 
         private void createFaceSetButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string name = createFaceSetDisplayName.Text;
             string outer = createFaceSetOuterName.Text;
             string tag = createFaceSetTags.Text;
             string token = "";
             string data = createFaceSetDataName.Text;
             int force = Convert.ToInt32(createFaceSetForce.Text);
-            //get json value
+
             MessageBox.Show(AS.CreateFaceSet(name, outer, tag, token, data, force));
         }
 
         private void removeFaceSetButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
-            //create variables
-            string outer = label45435345.Text;
+
+            string outer = removeFaceSetOuterName.Text;
             int empty = Convert.ToInt32(removeFaceSetEmpty.Text);
-            //get json value
+
             MessageBox.Show(AS.RemoveFaceSet(outer, empty));
         }
 
         private void updataFaceSetButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string name = updataFaceSetDisplayName.Text;
             string outer = updataFaceSetOuterName.Text;
             string new_outer = updataFaceSetNewOuterName.Text;
             string tag = updataFaceSetTags.Text;
             string data = updataFaceSetDataName.Text;
-            //get json value
+
             MessageBox.Show(AS.UpdateFaceSet(outer, new_outer, name, data, tag));
         }
 
         private void detailFaceSetButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
-            //create variables
+
             string outer = detailFaceSetOuterName.Text;
-            //get json value
+
             MessageBox.Show(AS.GetDetailFaceSet(outer));
         }
 
         private void removeFaceToFaceSetButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 
-            //create variables
             string image = removeFaceToFaceSetLink.Text;
             string outer = removeFaceToFaceSetOuter.Text;
-            int count = Convert.ToInt32(searchCount.Text);
             //get json value
-            string searchResult = AS.SearchFace(image, outer, count);
-
+            string searchResult = AS.SearchFace(image, outer, 1);
             //find faceset for add detected image
             string facesetForAddDetectedImage = AS.GetDetailFaceSet(outer);
             //create variables
             string faceset_token = H.ReadJsonDetailFaceSetForDetectedImageToken(facesetForAddDetectedImage);
             string face_token = H.ReadJsonForSearchToken(searchResult);
 
-            //get json value
             MessageBox.Show(AS.RemoveFaceFromFaceSet(faceset_token, outer, face_token));
         }
 
         private void addFaceToFaceSetButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 
@@ -178,24 +164,20 @@ namespace FacePP.WinForm
             string outer = addFaceToFaceSetOuter.Text;
             //get detected image json value
             string detectedImage = AS.DetectFace(image, landmark, attributes);
-
             //find faceset for add detected image
             string facesetForAddDetectedImage = AS.GetDetailFaceSet(outer);
             //create variables
             string faceset_token = H.ReadJsonDetailFaceSetForDetectedImageToken(facesetForAddDetectedImage);
             string face_token = H.ReadJsonForDetectedImageToken(detectedImage);
 
-            //get json value
             MessageBox.Show(AS.AddFaceToFaceSet(faceset_token, outer, face_token));
         }
 
         private void analyzeButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
 
-            //create variables
             //Detect an image and get detected image token
             string image = analyzeLink.Text;
             int landmark = Convert.ToInt32(analyzeLandmark.Text);
@@ -203,16 +185,15 @@ namespace FacePP.WinForm
             //get detected image json value
             string detectedImage = AS.DetectFace(image, landmark, attributes);
             string face_token = H.ReadJsonForDetectedImageToken(detectedImage);
-            //get json value
+
             MessageBox.Show(AS.AnalyzeFace(face_token, landmark, attributes));
         }
 
         private void detailFaceWithTokenButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
-            //create variables
+
             //Detect an image and get detected image token
             string image = detailFaceWithTokenLink.Text;
             int landmark = Convert.ToInt32(detailFaceWithTokenLandmark.Text);
@@ -220,16 +201,15 @@ namespace FacePP.WinForm
             //get detected image json value
             string detectedImage = AS.DetectFace(image, landmark, attributes);
             string face_token = H.ReadJsonForDetectedImageToken(detectedImage);
-            //get json value
+
             MessageBox.Show(AS.FaceDetailWithToken(face_token));
         }
 
         private void setFaceUserIDButton_Click(object sender, EventArgs e)
         {
-            //service instance
             AS = new ApiService();
             H = new Helper();
-            //create variables
+
             //Detect an image and get detected image token
             string image = setFaceUserIDLink.Text;
             int landmark = Convert.ToInt32(setFaceUserIDLandmark.Text);
@@ -241,6 +221,17 @@ namespace FacePP.WinForm
             string new_userid = setFaceUserIDNewUser.Text; //that should be same token, if not necessary dont change
 
             MessageBox.Show(AS.SetFaceDetailWithToken(face_token, new_userid));
+        }
+
+        private void listFacesetButton_Click(object sender, EventArgs e)
+        {
+            AS = new ApiService();
+            H = new Helper();
+
+            string tags = listFaceSetTag.Text;
+            int start = Convert.ToInt32(listFaceSetStart.Text);
+
+            MessageBox.Show(AS.GetFaceSetList(tags,start));
         }
     }
 }

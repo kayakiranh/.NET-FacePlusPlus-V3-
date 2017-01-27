@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FacePP.WebForm.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Face++ Web Form Demo</title>
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/css/simple-sidebar.css" rel="stylesheet" />
+    <script src="Assets/js/jquery.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">Face++ Web Form Demo</a>
+                </li>
+                <li>
+                    <a href="/Detect.aspx">Detect</a>
+                </li>
+                <li>
+                    <a href="/Compare.aspx">Compare</a>
+                </li>
+                <li>
+                    <a href="/CreateFaceset.aspx">Create Faceset</a>
+                </li>
+                <li>
+                    <a href="/UpdateFaceset.aspx">Update Faceset</a>
+                </li>
+                <li>
+                    <a href="/RemoveFaceset.aspx">Remove Faceset</a>
+                </li>
+                <li>
+                    <a href="/DetailFaceset.aspx">Detail Faceset</a>
+                </li>
+                <li>
+                    <a href="/ListFaceset.aspx">List Facesets</a>
+                </li>
+                <li>
+                    <a href="/AddFaceToFaceset.aspx">Add Face To Faceset</a>
+                </li>
+                <li>
+                    <a href="/RemoveFaceFromFaceset.aspx">Remove Face From Faceset</a>
+                </li>
+                <li>
+                    <a href="/SearchFaceInsideFaceset.aspx">Search Face Inside Faceset</a>
+                </li>
+                <li>
+                    <a href="/Analyze.aspx">Analyze</a>
+                </li>
+                <li>
+                    <a href="/FaceDetailWithToken.aspx">Face Detail With Token</a>
+                </li>
+                <li>
+                    <a href="/SetUserIDWithToken.aspx">Set UserID With Token</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <form id="form1" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+        <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+</body>
+</html>

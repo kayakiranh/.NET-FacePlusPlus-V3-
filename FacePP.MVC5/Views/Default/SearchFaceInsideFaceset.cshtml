@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "SearchInsideFaceset";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <h1>Search API</h1>
+        <p><a href="https://console.faceplusplus.com/documents/5681455" target="_blank">Go to Full Document Page</a></p>
+        <p>Important : if you can know/call tokens(from db, xml...), token versions is recommended. Token api names are inside full document page.</p>
+        <p>Find one or more most similar faces from Faceset, to a new face. You can upload image file or use face_token for face searching. For image upload, the biggest face by the size of bounding box within the image will be used. For face_token, you shall get it by using Detect API.</p><br />
+    </div>
+    <div class="col-md-12">
+        <h2>Search API Form</h2>
+        @using (Html.BeginForm("SearchFaceInsideFaceset", "Default", FormMethod.Post))
+        {
+            <label>Link : </label>
+            <input id="sfifUrl" type="text" name="sfifUrl" class="form-control" placeholder="Image Link" value="http://www.sephora.com/contentimages/categories/makeup/CONTOURING/030515/animations/round/round_01_before.jpg" required />
+            <label>Outer ID : </label>
+            <input id="sfifOuter" type="text" name="sfifOuter" class="form-control" placeholder="Outer ID" value="Test" required />
+            <label>Result Count : </label>
+            <input id="sfifForce" type="text" name="sfifForce" class="form-control" placeholder="1,5 (Default : 1)" value="1" /><br />
+            <input type="submit" value="Search Face Inside Faceset" class="btn btn-primary btn-block" />
+        }
+    </div>
+    <div class="col-md-12" runat="server" ID="result" style="white-space: pre !important; margin-top:20px;">
+        @{
+            if (ViewBag.Result != null)
+            {
+                @ViewBag.Result
+            }
+        }
+    </div>
+</div>

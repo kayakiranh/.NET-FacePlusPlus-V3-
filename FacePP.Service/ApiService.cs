@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Collections.Specialized;
 
 namespace FacePP.Service
 {
@@ -27,12 +28,24 @@ namespace FacePP.Service
         ///
         /// !!! PLEASE READ ONCE START DEVELOPMENT !!!
 
+        ///NEWTONSOFT.JSON NUGGET ADDED
+        /// "/Assemblies/Microsoft.Csharp" ADDED TO REFERENCE
+
         #region USER INFO
 
-        private static string username = "kayakiranh@hotmail.com"; //faceplusplus login email
-        private static string password = "maldaracanu"; //faceplusplus login password
-        private static string apikey = "2TEZTPEFA7QA2Z1vkKvn9YDwI1L2gmGr"; //faceplusplus v3 apikey
-        private static string apisecret = "JLUzK9hhwSGVS4yzbZLtqMX61i4aayOi"; //faceplusplus v3 apisecret
+        //for console/windows form
+        private static string username = "FACEPLUSPLUS USER EMAIL"; //faceplusplus login email
+        private static string password = "FACEPLUSPLUS USER PASSWORD"; //faceplusplus login password
+        private static string apikey = "FACEPLUSPLUS API KEY"; //faceplusplus v3 apikey
+        private static string apisecret = "FACEPLUSPLUS API SECRET"; //faceplusplus v3 apisecret
+        //for console/windows form
+
+        ////for web form/mvc
+        //private static string username = System.Configuration.ConfigurationManager.AppSettings["facepp_username"];
+        //private static string password = System.Configuration.ConfigurationManager.AppSettings["facepp_Password"];
+        //private static string apikey = System.Configuration.ConfigurationManager.AppSettings["apikey"];
+        //private static string apisecret = System.Configuration.ConfigurationManager.AppSettings["apisecret"];
+        ////for web form/mvc
 
         #endregion USER INFO
 
