@@ -43,11 +43,12 @@ Visaul Studio 2013 or Visual Studio 2015. Need Entity Framework 4.5 for web apps
 6 - All layers use/need FacePP.Service layer. If doesnt necessary dont hand ApiService.cs
 
 # Missing : 
-I dont store any data about api(mssql, mysql, xml, json, sqllite...) so some services use api more than normal. 
-Forexample search api, normally search api work with token but i dont store any token. 
-So i coded :  detect > get detected image token > use token for search
 
-But i will mvc example with database in this year(2017).
+Store : I dont store any data about api(mssql, mysql, xml, json, sqllite...) so some services use api more than normal. 
+Forexample search api, normally search api work with token but i dont store any token. 
+So i coded :  detect > get detected image token > use token for search. But i will mvc example with database in this year(2017).
+
+Celebrity : I will code search inside celebrity example in this year(2017).
 
 # Support / Advice / Mistake :
 kayakiranh@gmail.com, iletisim@huseyinkayakiran.com
